@@ -498,7 +498,7 @@ end
 
 -- Call and postpone execution for cron plugins
 function cron_plugins()
-
+ا
   for name, plugin in pairs(plugins) do
     -- Only plugins with cron function
     if plugin.cron ~= nil then
@@ -506,7 +506,7 @@ function cron_plugins()
     end
   end
 
-  -- Called again in 2 mins
+  -- Called again in 2 mins 
   postpone (cron_plugins, false, 120)
 end
 
